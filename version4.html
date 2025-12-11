@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>手相鑑定 - ミニマルリッチ</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', 'Noto Sans JP', sans-serif;
+      background: #0d0d0f;
+      color: #f4f6f8;
+    }
+    header {
+      padding: 64px 18px 32px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand { font-weight: 800; letter-spacing: 0.08em; }
+    .pill-nav { display: flex; gap: 10px; flex-wrap: wrap; }
+    .pill { padding: 10px 14px; border-radius: 999px; background: rgba(255,255,255,0.08); }
+    .hero {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 18px;
+      align-items: center;
+      padding: 24px 18px 42px;
+    }
+    .hero h1 { font-size: clamp(30px, 6vw, 52px); margin: 0 0 12px; }
+    .hero p { color: #dfe3e8; line-height: 1.7; }
+    .glass {
+      background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+      backdrop-filter: blur(4px);
+    }
+    .hero img {
+      width: 100%;
+      border-radius: 18px;
+      box-shadow: 0 22px 50px rgba(0,0,0,0.55);
+      object-fit: cover;
+    }
+    main { padding: 0 18px 64px; }
+    .list { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+    .tile {
+      background: linear-gradient(160deg, rgba(255,255,255,0.06), rgba(255,255,255,0.01));
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0 16px 38px rgba(0,0,0,0.35);
+    }
+    h2 { letter-spacing: 0.06em; }
+    footer { text-align: center; padding: 28px 18px 40px; color: #9aa4ae; border-top: 1px solid rgba(255,255,255,0.08); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">PALM CODE / プレミアム</div>
+    <div class="pill-nav">
+      <span class="pill">ラグジュアリー</span>
+      <span class="pill">プライベート</span>
+      <span class="pill">コンシェルジュ</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="glass">
+      <h1>Minimal Rich Reading</h1>
+      <p>ホテルラウンジのような静寂感をイメージし、ミニマルで洗練された空間をご用意。手相をコードとして読み解き、仕事・投資・人生戦略に落とし込むプレミアムセッションです。</p>
+      <p><strong>特典:</strong> 個別行動プラン／メンバー限定コミュニティ招待／月次フォローアップ。</p>
+    </div>
+    <img src="assets/kansei.jpg" alt="プレミアムな手相鑑定のイメージ">
+  </section>
+
+  <main>
+    <section class="list">
+      <div class="tile"><strong>Executive 60分</strong><br>キャリア決断を整理し、運気の波と重なるタイミングを提案。</div>
+      <div class="tile"><strong>Investment 50分</strong><br>リスク感覚や判断軸を手の線からチェックし、意思決定の癖を可視化。</div>
+      <div class="tile"><strong>Partnership 45分</strong><br>信頼・共創のサインを読み解き、チームビルディングのヒントを共有。</div>
+      <div class="tile"><strong>Concierge 90分</strong><br>完全個室／ラウンジサービス付きのフルサポート鑑定。</div>
+    </section>
+  </main>
+
+  <footer>
+    Concierge Desk: premium@example.com
+  </footer>
+</body>
+</html>

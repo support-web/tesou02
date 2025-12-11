@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>手相鑑定 - クラシックバージョン</title>
+  <style>
+    :root {
+      --ink: #2b1a12;
+      --accent: #e8a152;
+      --bg: #f9f3ec;
+      --shadow: 0 10px 30px rgba(43, 26, 18, 0.15);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.8;
+    }
+    header {
+      background: url('assets/images/tesoutop.jpg') center/cover no-repeat;
+      color: #fff;
+      padding: 80px 16px 120px;
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.75));
+    }
+    .hero {
+      position: relative;
+      max-width: 960px;
+      margin: 0 auto;
+      z-index: 1;
+      text-align: left;
+    }
+    .hero h1 {
+      font-size: clamp(28px, 5vw, 46px);
+      margin: 0 0 16px;
+      letter-spacing: 0.08em;
+    }
+    .hero p { max-width: 680px; font-size: 18px; }
+    .cta {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 14px 28px;
+      background: var(--accent);
+      color: #2b1a12;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .cta:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(43, 26, 18, 0.2); }
+    main { max-width: 1080px; margin: -80px auto 80px; padding: 0 16px; position: relative; z-index: 2; }
+    section { background: #fff; border-radius: 18px; padding: 28px; margin-bottom: 18px; box-shadow: var(--shadow); }
+    h2 { margin-top: 0; letter-spacing: 0.06em; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+    .card { padding: 20px; border-radius: 14px; background: #fff5e7; box-shadow: inset 0 0 0 1px rgba(43,26,18,0.06); }
+    footer { text-align: center; padding: 32px 16px 48px; color: #6e5546; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <h1>本格手相鑑定 – あなたの掌に宿る物語</h1>
+      <p>和の落ち着きと古典的な雰囲気を大切にしたクラシックなデザイン。掌に刻まれた線の意味を、丁寧なカウンセリングと共に読み解きます。</p>
+      <a class="cta" href="#plans">鑑定メニューを見る</a>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>鑑定の流れ</h2>
+      <div class="grid">
+        <div class="card"><strong>1. ご予約</strong><br>オンライン・お電話からご希望の日時をお選びください。</div>
+        <div class="card"><strong>2. カウンセリング</strong><br>ライフステージや関心事をヒアリングし、読むべき線を明確にします。</div>
+        <div class="card"><strong>3. 手相鑑定</strong><br>生命線・感情線・知能線を中心に、細部のサインまで丁寧に確認します。</div>
+        <div class="card"><strong>4. フィードバック</strong><br>今後の過ごし方や開運アクションをレポートとしてお渡しします。</div>
+      </div>
+    </section>
+
+    <section id="plans">
+      <h2>鑑定メニュー</h2>
+      <div class="grid">
+        <div class="card"><strong>ベーシック 30分</strong><br>主要な手の線を中心に、基本性格と強みを整理。</div>
+        <div class="card"><strong>キャリア 45分</strong><br>適職・転機の時期・人間関係のヒントを重点解説。</div>
+        <div class="card"><strong>パートナーシップ 45分</strong><br>愛情線や相性に関わるサインを中心に確認。</div>
+        <div class="card"><strong>プレミアム 60分</strong><br>総合鑑定＋個別フォローアップアドバイス付き。</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>特徴</h2>
+      <p>占術の理論に基づいた説明に加え、日常で活かせる行動提案を重視。オンライン鑑定にも対応し、ご自宅から安心して相談いただけます。</p>
+    </section>
+  </main>
+
+  <footer>
+    予約・お問い合わせ: contact@example.com / 050-1234-5678
+  </footer>
+</body>
+</html>

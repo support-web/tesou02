@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>手相鑑定 - モダンリトリート</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Noto Sans JP', 'Hiragino Sans', sans-serif;
+      background: linear-gradient(135deg, #0f1520 0%, #1f2a38 50%, #0f1a28 100%);
+      color: #e9eef5;
+    }
+    header {
+      display: grid;
+      grid-template-columns: 1.05fr 1fr;
+      min-height: 70vh;
+      gap: 24px;
+      padding: 48px clamp(16px, 4vw, 60px) 24px;
+      align-items: center;
+    }
+    .hero {
+      padding: 28px;
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+      backdrop-filter: blur(6px);
+    }
+    h1 { margin-top: 0; font-size: clamp(30px, 5vw, 48px); letter-spacing: 0.05em; }
+    p { line-height: 1.8; color: #d1d8e0; }
+    .cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn {
+      padding: 14px 22px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: linear-gradient(135deg, #f8d479, #f29c54);
+      color: #2a1a0a;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 20px 38px rgba(242, 156, 84, 0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .btn.secondary {
+      background: transparent;
+      color: #e9eef5;
+      box-shadow: none;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 26px 44px rgba(242, 156, 84, 0.35); }
+    .btn.secondary:hover { border-color: rgba(255,255,255,0.35); }
+    .photo {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.45);
+    }
+    .photo img { width: 100%; display: block; object-fit: cover; height: 100%; }
+    .tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 18px; }
+    .tag { padding: 8px 14px; border-radius: 999px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.06); font-size: 14px; }
+    main { padding: 0 clamp(16px, 4vw, 60px) 80px; }
+    .split {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+    .panel {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+    h2 { letter-spacing: 0.08em; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <h1>Modern Retreat - 星と掌が重なる瞬間</h1>
+      <p>静かな夜をイメージしたモダンデザイン。オンライン鑑定や撮影した手の写真を用いたリモートセッションなど、都市にいながら癒やしのリトリートを体験できます。</p>
+      <div class="cta-row">
+        <a class="btn" href="#plans">予約する</a>
+        <a class="btn secondary" href="#features">特徴を見る</a>
+      </div>
+      <div class="tags">
+        <span class="tag">オンライン対応</span>
+        <span class="tag">夜間セッション</span>
+        <span class="tag">録画レポート付き</span>
+      </div>
+    </div>
+    <div class="photo">
+      <img src="assets/kansei.jpg" alt="完成イメージ: 手のひらと光が印象的な写真">
+    </div>
+  </header>
+
+  <main>
+    <section id="plans">
+      <h2>Plans</h2>
+      <div class="split">
+        <div class="panel"><strong>Night Session 40分</strong><br>夜の静けさの中で心を整え、未来の兆しをゆっくり紐解きます。</div>
+        <div class="panel"><strong>リモート + フォロー</strong><br>事前に手の写真を送付いただき、当日の鑑定後に動画解説をお届け。</div>
+        <div class="panel"><strong>デジタルノート付</strong><br>鑑定内容をデジタルノートに整理。次の行動が一目でわかります。</div>
+      </div>
+    </section>
+
+    <section id="features">
+      <h2>Features</h2>
+      <div class="split">
+        <div class="panel">瞑想BGMと共に、呼吸を整えてから鑑定を開始。心身の緊張を解き、線の変化を丁寧に観察します。</div>
+        <div class="panel">心理カウンセリングの要素を取り入れ、自己理解や自己受容を高めるフィードバックを提供。</div>
+        <div class="panel">手相に現れるタイミングと星の動きを重ね合わせ、転機の季節を一緒に確認します。</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
