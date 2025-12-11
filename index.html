@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>手相鑑定サイト バリエーション集</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f4ef;
+      --ink: #1f1a17;
+      --accent: #c46b4f;
+      --card: #fff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Hiragino Sans', 'Noto Sans JP', system-ui, -apple-system, sans-serif;
+      background: radial-gradient(circle at 20% 20%, rgba(196,107,79,0.08), transparent 35%),
+                  radial-gradient(circle at 80% 0%, rgba(94,120,153,0.12), transparent 30%),
+                  var(--bg);
+      color: var(--ink);
+      min-height: 100vh;
+      padding: 2.5rem 1.25rem 3rem;
+    }
+    header {
+      max-width: 1080px;
+      margin: 0 auto 2rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      margin-bottom: .35rem;
+      letter-spacing: .08em;
+    }
+    p.lead {
+      margin: 0 auto;
+      max-width: 680px;
+      color: #4b443f;
+      line-height: 1.7;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+    article {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 1rem;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+      display: flex;
+      flex-direction: column;
+      gap: .75rem;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    article:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px rgba(0,0,0,0.08);
+    }
+    article img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      aspect-ratio: 4/3;
+    }
+    .tags {
+      display: flex;
+      gap: .5rem;
+      flex-wrap: wrap;
+    }
+    .tag {
+      padding: .25rem .7rem;
+      border-radius: 999px;
+      background: rgba(196,107,79,.12);
+      color: var(--accent);
+      font-size: .9rem;
+      letter-spacing: .03em;
+    }
+    .actions {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: .75rem;
+      flex-wrap: wrap;
+    }
+    a.button {
+      text-decoration: none;
+      background: linear-gradient(120deg, #c46b4f, #dd8f62);
+      color: #fff;
+      padding: .65rem 1rem;
+      border-radius: 10px;
+      font-weight: 600;
+      box-shadow: 0 8px 20px rgba(196,107,79,0.25);
+    }
+    small { color: #6c625b; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>手相鑑定サイト デザインバリエーション</h1>
+    <p class="lead">/assets/kansei.jpg の完成イメージを基に、手相鑑定サービスのトップページを4種類のテイストで制作しました。それぞれのデモは画像データ（例: /assets/images/tesoutop.jpg）を背景に活用しています。</p>
+  </header>
+  <section class="grid">
+    <article>
+      <img src="assets/images/tesoutop.jpg" alt="シックな手相鑑定サイト">
+      <div class="tags"><span class="tag">モダン</span><span class="tag">シック</span></div>
+      <div>
+        <h2>Version 1: Modern Luxe</h2>
+        <p>ダークと金色を基調にしたラグジュアリーな雰囲気。信頼感のあるレイアウトで、予約動線を明確にしました。</p>
+      </div>
+      <div class="actions">
+        <a class="button" href="version1.html">デモを見る</a>
+        <small>レスポンシブ / ヒーローセクション + 実績</small>
+      </div>
+    </article>
+    <article>
+      <img src="assets/images/tesoutop.jpg" alt="クラシックな手相鑑定サイト">
+      <div class="tags"><span class="tag">クラシック</span><span class="tag">深紫</span></div>
+      <div>
+        <h2>Version 2: Classic Mystic</h2>
+        <p>深い紫と装飾的な罫線で、占い館の世界観を演出。セッションメニューをカードで整理しました。</p>
+      </div>
+      <div class="actions">
+        <a class="button" href="version2.html">デモを見る</a>
+        <small>背景オーバーレイ / メニューカード</small>
+      </div>
+    </article>
+    <article>
+      <img src="assets/images/tesoutop.jpg" alt="ミニマルな手相鑑定サイト">
+      <div class="tags"><span class="tag">ミニマル</span><span class="tag">明るい</span></div>
+      <div>
+        <h2>Version 3: Minimal Calm</h2>
+        <p>白と淡い色で余白を活かしたシンプルデザイン。手順の理解を助ける3ステップ導線が特徴です。</p>
+      </div>
+      <div class="actions">
+        <a class="button" href="version3.html">デモを見る</a>
+        <small>3ステップ / FAQ / CTA</small>
+      </div>
+    </article>
+    <article>
+      <img src="assets/images/tesoutop.jpg" alt="スピリチュアルな手相鑑定サイト">
+      <div class="tags"><span class="tag">スピリチュアル</span><span class="tag">グラデ</span></div>
+      <div>
+        <h2>Version 4: Aurora Spiritual</h2>
+        <p>オーロラ風グラデーションとグラスモーフィズムを用いた幻想的なトーン。お客様の声を目立たせました。</p>
+      </div>
+      <div class="actions">
+        <a class="button" href="version4.html">デモを見る</a>
+        <small>ガラスカード / レビュー</small>
+      </div>
+    </article>
+  </section>
+</body>
+</html>

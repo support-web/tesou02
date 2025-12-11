@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>手相鑑定 Classic Mystic</title>
+  <style>
+    :root {
+      --bg: #1a0f24;
+      --panel: #24132f;
+      --accent: #c9a2ff;
+      --line: rgba(255,255,255,0.08);
+      --text: #e7dffc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Shippori Mincho', 'Noto Serif JP', serif;
+      background: radial-gradient(circle at 30% 20%, rgba(201,162,255,0.08), transparent 40%),
+                  radial-gradient(circle at 80% 10%, rgba(137,120,207,0.08), transparent 35%),
+                  var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+    header {
+      position: relative;
+      padding: 3.5rem 1.25rem;
+      background: linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.75)), url('assets/images/tesoutop.jpg') center/cover;
+      border-bottom: 1px solid var(--line);
+      text-align: center;
+    }
+    .frame {
+      max-width: 980px;
+      margin: 0 auto;
+      border: 1px solid var(--line);
+      padding: 2.5rem 1.5rem;
+      border-radius: 18px;
+      backdrop-filter: blur(4px);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+      background: rgba(26,15,36,0.65);
+    }
+    h1 { font-size: clamp(2rem, 3vw, 2.7rem); letter-spacing: .12em; margin: 0 0 1rem; }
+    p.lead { max-width: 720px; margin: 0 auto 1.2rem; line-height: 1.8; }
+    .underline { width: 120px; height: 2px; background: linear-gradient(90deg, transparent, var(--accent), transparent); margin: 0.8rem auto 0; }
+    main { padding: 2.5rem 1.25rem 3.5rem; }
+    .section { max-width: 980px; margin: 0 auto 2.5rem; }
+    h2 { letter-spacing: .1em; font-size: 1.3rem; margin-bottom: 1rem; border-bottom: 1px solid var(--line); padding-bottom: .5rem; }
+    .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 1rem; }
+    .menu {
+      border: 1px solid var(--line);
+      padding: 1.1rem 1rem;
+      border-radius: 14px;
+      background: rgba(36,19,47,0.7);
+      box-shadow: inset 0 0 0 1px rgba(201,162,255,0.04);
+    }
+    .menu h3 { margin: 0 0 .4rem; color: var(--accent); }
+    .menu p { margin: 0 0 .4rem; line-height: 1.7; }
+    .menu strong { color: #ffe6a7; }
+    .steps { display: grid; gap: .8rem; }
+    .step { display: grid; grid-template-columns: 52px 1fr; gap: .7rem; align-items: center; padding: .7rem; border: 1px dashed var(--line); border-radius: 12px; }
+    .step div:first-child { width: 52px; height: 52px; border-radius: 50%; border: 1px solid var(--accent); display: grid; place-items: center; color: var(--accent); font-weight: 700; }
+    .cta { text-align: center; margin-top: 1.6rem; }
+    .cta a { color: #1a0f24; background: linear-gradient(120deg, #ffe6a7, #d9b4ff); text-decoration: none; padding: .75rem 1.4rem; border-radius: 999px; font-weight: 700; box-shadow: 0 10px 30px rgba(201,162,255,0.35); }
+    footer { text-align: center; color: #b9aacd; padding: 1.5rem 1rem 2rem; border-top: 1px solid var(--line); background: #130a1b; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="frame">
+      <h1>Classic Mystic Palm</h1>
+      <p class="lead">静かな紫の世界で、あなたの手が語るメッセージを丁寧に紐解きます。装飾的なフレームに囲まれた上質な空間で、落ち着いて鑑定を受けられます。</p>
+      <div class="underline"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>メニュー</h2>
+      <div class="menu-grid">
+        <div class="menu">
+          <h3>総合鑑定 60分</h3>
+          <p>性格・仕事・恋愛の三軸で総合的にお伝えします。</p>
+          <p><strong>¥11,000</strong></p>
+        </div>
+        <div class="menu">
+          <h3>開運アドバイス 45分</h3>
+          <p>目標に合わせた運気の整え方を具体的な行動として提示。</p>
+          <p><strong>¥8,800</strong></p>
+        </div>
+        <div class="menu">
+          <h3>イベント鑑定</h3>
+          <p>企業・店舗イベント向けの短時間鑑定。全国出張対応。</p>
+          <p><strong>¥30,000〜</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>ご予約の流れ</h2>
+      <div class="steps">
+        <div class="step">
+          <div>1</div>
+          <div>
+            <strong>お問い合わせ</strong>
+            <p>メールまたはフォームで希望日時・鑑定方法をお知らせください。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div>2</div>
+          <div>
+            <strong>日程確定</strong>
+            <p>24時間以内にご返信し、事前決済・ご案内をお送りします。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div>3</div>
+          <div>
+            <strong>当日鑑定</strong>
+            <p>オンラインはビデオ通話、対面は静かな個室で実施します。</p>
+          </div>
+        </div>
+      </div>
+      <div class="cta">
+        <a href="mailto:info@example.com?subject=%E6%89%8B%E7%9B%B8%E9%91%91%E5%AE%9A%E3%81%AE%E3%81%94%E4%BA%88%E7%B4%84">メールで予約する</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© Classic Mystic Palm</footer>
+</body>
+</html>
