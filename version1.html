@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>手相鑑定 | Serenity Gradient</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    body {
+      background: radial-gradient(circle at 20% 20%, #fff7ea, #f6ecdb 36%, #efe3d2 70%);
+    }
+    header {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo { font-weight: 800; letter-spacing: 0.08em; color: #7a5a2f; }
+    main { max-width: 1080px; margin: 0 auto; padding: 12px 24px 72px; }
+    .hero { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .hero-text h1 { font-size: clamp(30px, 5vw, 42px); letter-spacing: 0.07em; margin-bottom: 10px; }
+    .hero-text p { color: #5e503f; margin-bottom: 16px; }
+    .cta-group { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 10px; }
+    .cta-secondary { border: 1px dashed #c9b48a; background: rgba(255,255,255,0.7); }
+    section { margin-top: 46px; }
+    .pill-list { display: flex; gap: 10px; flex-wrap: wrap; }
+    .pill { padding: 10px 14px; border-radius: 999px; border: 1px solid #ead9c2; background: #fff; box-shadow: 0 10px 24px rgba(0,0,0,0.05); }
+    .pricing { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .pricing .price { font-size: 26px; font-weight: 800; color: #7a5a2f; }
+    .steps { counter-reset: step; display: grid; gap: 14px; }
+    .step { display: grid; grid-template-columns: 42px 1fr; gap: 12px; align-items: center; padding: 12px 14px; background: #fff; border-radius: 12px; border: 1px solid #f0e3d0; box-shadow: 0 10px 26px rgba(0,0,0,0.06); }
+    .step:before { counter-increment: step; content: counter(step); display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; border-radius: 12px; background: linear-gradient(135deg, #f2e4d7, #e6c37a); color: #3a2c1d; font-weight: 800; }
+    footer { margin-top: 64px; color: #6b5a48; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Serenity Gradient</div>
+    <a class="button" href="index.html">他のデザインを見る</a>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="badge">丁寧に寄り添う手相鑑定</p>
+        <h1>あなたの手が教える、未来のヒント</h1>
+        <p>手のひらの線、膨らみ、温度。それぞれが「今」と「これから」を映すメッセージ。対面でもオンラインでも、落ち着いた空間でゆったりと受けられる鑑定です。</p>
+        <div class="pill-list">
+          <span class="pill">対面・オンライン対応</span>
+          <span class="pill">初回30分 3,500円</span>
+          <span class="pill">延長10分 1,000円</span>
+          <span class="pill">録音・メモ持ち込みOK</span>
+        </div>
+        <div class="cta-group">
+          <a class="button" href="#reservation">最短予約をする</a>
+          <a class="button cta-secondary" href="#menu">メニューを見る</a>
+        </div>
+      </div>
+      <div>
+        <img src="assets/images/tesoutop.jpg" alt="手相鑑定イメージ">
+      </div>
+    </section>
+
+    <section id="menu">
+      <p class="badge">鑑定メニュー</p>
+      <h2 class="section-title">目的に合わせて選べる 3 つのコース</h2>
+      <div class="card-grid">
+        <div class="card">
+          <div class="meta">集中 30分</div>
+          <h3>ライトリーディング</h3>
+          <p>今の状況をサクッと整理したい方へ。運勢の流れと開運ポイントをまとめてお伝えします。</p>
+        </div>
+        <div class="card">
+          <div class="meta">じっくり 60分</div>
+          <h3>ライフナビ鑑定</h3>
+          <p>仕事・恋愛・家族のバランスを俯瞰して、半年〜1年先までの方針を立てる人気コース。</p>
+        </div>
+        <div class="card">
+          <div class="meta">対話 90分</div>
+          <h3>プレミアム対話</h3>
+          <p>大切な決断の前に。選択肢の整理、タイミング、相性まで丁寧にサポートします。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <p class="badge">料金</p>
+      <h2 class="section-title">シンプルで安心な料金設定</h2>
+      <div class="pricing">
+        <div class="card">
+          <div class="meta">基本</div>
+          <div class="price">3,500円</div>
+          <p>初回 30分（オンライン/対面）</p>
+        </div>
+        <div class="card">
+          <div class="meta">延長</div>
+          <div class="price">1,000円</div>
+          <p>延長 10分ごと</p>
+        </div>
+        <div class="card">
+          <div class="meta">録画・録音</div>
+          <div class="price">無料</div>
+          <p>ご自身での録音・メモは歓迎です</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="flow">
+      <p class="badge">当日の流れ</p>
+      <h2 class="section-title">3ステップでスムーズに鑑定</h2>
+      <div class="steps">
+        <div class="step">
+          <div></div>
+          <div>
+            <h3>日程を選ぶ</h3>
+            <p>オンライン/対面を選択し、希望日時をお知らせください。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div></div>
+          <div>
+            <h3>ヒアリング</h3>
+            <p>気になるテーマや知りたい未来像を共有いただきます。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div></div>
+          <div>
+            <h3>鑑定＆アドバイス</h3>
+            <p>手のひらのメッセージを丁寧に読み解き、今日からできるアクションをお渡しします。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reservation">
+      <p class="badge">予約</p>
+      <h2 class="section-title">空き枠の確認・ご予約はこちら</h2>
+      <div class="card">
+        <p class="meta">LINE / フォーム / お電話</p>
+        <p>お急ぎの方は「お名前」「希望日時」「オンライン/対面」を添えてご連絡ください。24時間以内に折り返します。</p>
+        <div class="cta-group" style="margin-top:14px;">
+          <a class="button" href="mailto:info@example.com">メールで問い合わせ</a>
+          <a class="button cta-secondary" href="tel:000-1234-5678">電話する</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>© 2024 Serenity Gradient Palm Reading</footer>
+</body>
+</html>

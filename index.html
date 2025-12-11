@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>手相鑑定サイト | デザインバリエーション</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 26px 24px;
+      background: linear-gradient(120deg, #f9f2e5, #fff);
+      border-bottom: 1px solid #f0e6d5;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+    }
+    .logo {
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      color: #8b6c3c;
+    }
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 40px 24px 72px;
+    }
+    .intro {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+      align-items: center;
+      margin-bottom: 44px;
+    }
+    .intro img {
+      width: 100%;
+      border-radius: 16px;
+      border: 1px solid #f3e7d7;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+    }
+    .versions {
+      display: grid;
+      gap: 18px;
+    }
+    .version-card {
+      display: grid;
+      grid-template-columns: 1fr 200px;
+      gap: 18px;
+      align-items: center;
+      padding: 18px 20px;
+      border-radius: 16px;
+      border: 1px solid #f1e7d4;
+      background: #fff;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+      transition: transform 220ms ease, box-shadow 220ms ease;
+    }
+    .version-card:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(0,0,0,0.14);}    
+    .version-card img { width: 100%; border-radius: 12px; border: 1px solid #efe1d0; }
+    .version-title { font-size: 22px; margin-bottom: 4px; letter-spacing: 0.04em; }
+    .version-desc { color: #5f5245; }
+    @media (max-width: 720px) {
+      .version-card { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">TESOU Guidance</div>
+    <div class="badge">4つのデザインを一度にプレビュー</div>
+  </header>
+  <main>
+    <section class="intro">
+      <div>
+        <p class="badge">完成イメージ / assets/kansei.jpg</p>
+        <h1 class="section-title">手相鑑定サイト デザインギャラリー</h1>
+        <p>assets/kansei.jpg の雰囲気を参考にしつつ、手相鑑定サービスの着地ページを4種類のスタイルで用意しました。各ページでは assets/images/tesoutop.jpg を活用したヒーローイメージと、鑑定メニュー・料金・安心感を伝えるコンテンツをレイアウトしています。</p>
+      </div>
+      <img src="assets/kansei.jpg" alt="完成イメージ">
+    </section>
+
+    <div class="versions">
+      <a class="version-card" href="version1.html">
+        <div>
+          <div class="version-title">Version 1 — Serenity Gradient</div>
+          <p class="version-desc">柔らかなグラデーションと余白で、丁寧な鑑定と安心感を演出。CTA を複数配置し、導線を明確にしています。</p>
+        </div>
+        <img src="assets/images/tesoutop.jpg" alt="Version 1 preview">
+      </a>
+      <a class="version-card" href="version2.html">
+        <div>
+          <div class="version-title">Version 2 — Mystic Minimal</div>
+          <p class="version-desc">ミニマルな2カラムとシグネチャーラインで信頼性を強調。ポイントを絞った訴求とレビューの見せ方が特徴。</p>
+        </div>
+        <img src="assets/images/tesoutop.jpg" alt="Version 2 preview">
+      </a>
+      <a class="version-card" href="version3.html">
+        <div>
+          <div class="version-title">Version 3 — Celestial Journey</div>
+          <p class="version-desc">夜空を思わせるダークトーンに金のアクセント。ストーリー性をもたせたタイムラインで鑑定体験を描きます。</p>
+        </div>
+        <img src="assets/images/tesoutop.jpg" alt="Version 3 preview">
+      </a>
+      <a class="version-card" href="version4.html">
+        <div>
+          <div class="version-title">Version 4 — Warm Guidance</div>
+          <p class="version-desc">柔らかなベージュと手書き風パーツで親近感をプラス。料金と予約導線を目立たせた構成です。</p>
+        </div>
+        <img src="assets/images/tesoutop.jpg" alt="Version 4 preview">
+      </a>
+    </div>
+  </main>
+  <footer>© 2024 手相鑑定スタジオ — 4つのデザインからお選びください。</footer>
+</body>
+</html>

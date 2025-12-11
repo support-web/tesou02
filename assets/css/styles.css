@@ -1,0 +1,124 @@
+:root {
+  --gold: #e6c37a;
+  --deep-indigo: #17142b;
+  --midnight: #0f0b1c;
+  --rose: #f2e4d7;
+  --soft-rose: #f8f1e9;
+  --ember: #e39f63;
+  --forest: #1e3c3c;
+  --cream: #faf6ef;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --shadow-strong: rgba(0, 0, 0, 0.25);
+  --rounded: 14px;
+  --transition: 220ms ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans JP', 'Hiragino Sans', 'Helvetica Neue', Arial, sans-serif;
+  color: #1c1a29;
+  background: var(--cream);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c08c40;
+}
+
+.hero {
+  display: grid;
+  gap: 28px;
+  align-items: center;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: var(--rounded);
+  box-shadow: 0 20px 35px var(--shadow-strong);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: 1px solid #c9b48a;
+  background: linear-gradient(120deg, #f2e4d7, #fff);
+  color: #3a2c1d;
+  font-weight: 700;
+  box-shadow: 0 10px 25px var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px var(--shadow-strong);
+}
+
+.section-title {
+  font-size: clamp(26px, 4vw, 34px);
+  margin-bottom: 12px;
+  letter-spacing: 0.08em;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(23, 20, 43, 0.08);
+  color: #3c2e1a;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  padding: 18px 20px;
+  border-radius: var(--rounded);
+  background: #fff;
+  box-shadow: 0 12px 30px var(--shadow);
+  border: 1px solid #f1e7d4;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px var(--shadow-strong);
+}
+
+.meta {
+  color: #6e6155;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+footer {
+  margin-top: 80px;
+  padding: 24px 0 32px;
+  color: #5c5242;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
