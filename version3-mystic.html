@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>手相鑑定 ミスティックナイト</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', 'Hiragino Sans', system-ui, sans-serif;
+      background: #0f1017;
+      color: #f3f3f7;
+    }
+    header {
+      padding: 26px 18px;
+      text-align: center;
+      background: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.07), transparent 40%),
+                  radial-gradient(circle at 80% 10%, rgba(255,255,255,0.05), transparent 45%),
+                  linear-gradient(120deg, #0f1017, #0f1422 55%, #0f1017);
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(111, 66, 193, 0.25), rgba(111, 66, 193, 0));
+      right: -160px;
+      bottom: -200px;
+      filter: blur(6px);
+    }
+    .title { font-size: clamp(30px, 4vw, 46px); margin: 6px 0 12px; letter-spacing: 0.02em; }
+    .lead { color: #cdd1f7; max-width: 720px; margin: 0 auto 10px; }
+    .hero-img {
+      max-width: 980px;
+      margin: 22px auto 0;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 28px 80px rgba(0,0,0,0.55);
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+    .hero-img img { width: 100%; display: block; }
+    .section { max-width: 1100px; margin: 40px auto; padding: 0 18px; }
+    h2 { margin: 0 0 14px; letter-spacing: 0.02em; }
+    .pill-row { display: flex; gap: 10px; flex-wrap: wrap; }
+    .pill {
+      padding: 8px 12px;
+      border-radius: 12px;
+      background: rgba(111, 66, 193, 0.18);
+      color: #d7c8ff;
+      border: 1px solid rgba(215,200,255,0.28);
+    }
+    .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .card {
+      background: linear-gradient(160deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: 0 16px 38px rgba(0,0,0,0.28);
+    }
+    .card h3 { margin-top: 0; }
+    .flow { display: grid; gap: 12px; }
+    .step { display: grid; grid-template-columns: 50px 1fr; gap: 10px; align-items: center; }
+    .step span {
+      width: 50px;
+      height: 50px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(145deg, #6f42c1, #f8719d);
+      font-weight: 800;
+    }
+    .cta {
+      display: inline-block;
+      padding: 12px 18px;
+      margin-top: 12px;
+      background: #f8719d;
+      color: #0f1017;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 800;
+      box-shadow: 0 16px 36px rgba(248,113,157,0.38);
+    }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; }
+    .gallery img { width: 100%; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 12px 30px rgba(0,0,0,0.35); }
+    footer { text-align: center; padding: 30px 18px 40px; color: #8d91b5; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="pill-row" style="justify-content:center;">
+      <span class="pill">夜に似合う静かな鑑定</span>
+      <span class="pill">匿名チャット補足付き</span>
+      <span class="pill">ビデオ/音声どちらもOK</span>
+    </div>
+    <h1 class="title">Mystic Night Palm Reading</h1>
+    <p class="lead">静寂のトーンで心を整えるミッドナイトデザイン。感情の波と運気のタイミングを、夜空を眺めるように落ち着いて整理します。</p>
+    <div class="hero-img">
+      <img src="assets/images/tesoutop.jpg" alt="手相鑑定ビジュアル">
+    </div>
+  </header>
+
+  <section class="section">
+    <h2>Focus</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>恋愛</h3>
+        <p>心の開き方、相性、出会いのサイクルを月の満ち欠けになぞらえながら読み解きます。</p>
+      </div>
+      <div class="card">
+        <h3>キャリア</h3>
+        <p>伸ばすべき線・強みを抽出し、夜の静けさで戦略を組み立てるサポートをします。</p>
+      </div>
+      <div class="card">
+        <h3>ライフバランス</h3>
+        <p>休息のサイン、デトックスのタイミングを手のひらから読み取り、セルフケアを提案。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Session Flow</h2>
+    <div class="card flow">
+      <div class="step"><span>1</span><div>フォーム入力（24h対応）。気になるテーマを2〜3個共有ください。</div></div>
+      <div class="step"><span>2</span><div>手の写真を送付。暗所でも写りやすい撮影ガイドをお送りします。</div></div>
+      <div class="step"><span>3</span><div>オンライン鑑定（夜22時まで）。集中して話せる時間を確保します。</div></div>
+      <div class="step"><span>4</span><div>アフターPDFと音声メモをお渡し。行動日と心の栄養補給法をまとめます。</div></div>
+      <a class="cta" href="#gallery">予約する</a>
+    </div>
+  </section>
+
+  <section class="section" id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="assets/kansei.jpg" alt="感性サンプル">
+      <img src="assets/images/tesoutop.jpg" alt="鑑定イメージ">
+    </div>
+  </section>
+
+  <footer>
+    Mystic Night Palm Reading © 2024 — 眠れる夜に寄り添うリーディング
+  </footer>
+</body>
+</html>

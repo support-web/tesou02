@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>手相鑑定 セレニティ</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Noto Sans JP', 'Hiragino Sans', system-ui, -apple-system, sans-serif;
+      background: #f7f6f4;
+      color: #1f1f1f;
+    }
+    header {
+      background: #ffffff;
+      padding: 28px 20px;
+      border-bottom: 1px solid #ece7df;
+    }
+    .logo {
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #d45c8c;
+    }
+    .hero {
+      max-width: 1100px;
+      margin: 28px auto 0;
+      background: #fff;
+      border: 1px solid #ede7de;
+      border-radius: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+      overflow: hidden;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.06);
+    }
+    .hero img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-text { padding: 32px; }
+    h1 { margin: 0 0 14px; font-size: clamp(26px, 3.8vw, 40px); letter-spacing: -0.02em; }
+    p { margin: 0 0 14px; }
+    .points {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .chip {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #fff4f8;
+      color: #b53d6e;
+      border: 1px solid #f3dbe5;
+      font-weight: 700;
+    }
+    .primary-btn {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 12px 18px;
+      background: #1f1f1f;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 700;
+    }
+    .section { max-width: 1100px; margin: 28px auto; padding: 0 18px; }
+    .section h2 { margin: 0 0 12px; }
+    .cards { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .card {
+      background: #fff;
+      border: 1px solid #ede7de;
+      border-radius: 14px;
+      padding: 16px;
+      box-shadow: 0 10px 26px rgba(0,0,0,0.04);
+    }
+    .list { padding-left: 18px; }
+    .price-box {
+      background: linear-gradient(135deg, #fff, #f9f4ef);
+      border-radius: 18px;
+      padding: 18px;
+      border: 1px solid #eee4d8;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.8);
+    }
+    .footer {
+      max-width: 1100px;
+      margin: 20px auto 40px;
+      padding: 12px 18px;
+      color: #6c6a67;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Palm Clarity</div>
+  </header>
+
+  <div class="hero">
+    <div class="hero-text">
+      <h1>静けさの中で、手相が教える次の一歩。</h1>
+      <p>モノトーンを基調に、思考が澄み渡るシンプルデザイン。手の線をロジカルに整理し、明日から使えるアドバイスをお届けします。</p>
+      <div class="points">
+        <span class="chip">キャリア戦略</span>
+        <span class="chip">恋愛の整え方</span>
+        <span class="chip">マインドケア</span>
+        <span class="chip">習慣デザイン</span>
+      </div>
+      <a href="#plan" class="primary-btn">プランを確認する</a>
+    </div>
+    <img src="assets/images/tesoutop.jpg" alt="手相鑑定のイメージ">
+  </div>
+
+  <section class="section">
+    <h2>3つの視点で手相を読む</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>ストーリー</h3>
+        <p>過去・現在・未来の線を時間軸で紐解き、今のテーマとチャンスの芽を共有します。</p>
+      </div>
+      <div class="card">
+        <h3>戦略</h3>
+        <p>強み・弱みを整理し、行動の優先順位を提案。決断に迷いがある方へ客観的な指針を。</p>
+      </div>
+      <div class="card">
+        <h3>メンタル</h3>
+        <p>モチベーションの波、休息のサイン、心の癖をケアするセルフメンテのヒントをお伝え。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="plan">
+    <h2>セッションプラン</h2>
+    <div class="cards">
+      <div class="card price-box">
+        <h3>スタンダード 50分</h3>
+        <p><strong>7,800円（税込）</strong> / オンライン
+        <br>気になるテーマを1〜2つ集中でリーディング。短時間で答えが欲しい方に。</p>
+      </div>
+      <div class="card price-box">
+        <h3>ディープダイブ 80分</h3>
+        <p><strong>11,800円（税込）</strong> / オンライン・対面
+        <br>ライフイベントの整理や複数テーマの相談に。感性シート（PDF）付き。</p>
+      </div>
+      <div class="card">
+        <h3>完成イメージ</h3>
+        <p>鑑定内容をまとめた感性イメージサンプル。行動キーワードを視覚化してお渡しします。</p>
+        <img src="assets/kansei.jpg" alt="完成イメージ" style="width:100%; border-radius:12px; margin-top:10px;">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>予約から鑑定まで</h2>
+    <div class="cards">
+      <div class="card">
+        <h4>1. 予約フォーム</h4>
+        <p>希望日時・相談軸を送信。48時間以内の希望を優先的に調整します。</p>
+      </div>
+      <div class="card">
+        <h4>2. 手の写真送付</h4>
+        <p>自然光で両手を撮影。明るさの補正方法もご案内します。</p>
+      </div>
+      <div class="card">
+        <h4>3. セッション</h4>
+        <p>Zoom/LINEで対話。質問しながら進められるので、納得感のある時間に。</p>
+      </div>
+      <div class="card">
+        <h4>4. アフターケア</h4>
+        <p>感性シートと次のアクションをメール送付。1週間のフォロー質問付き。</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    Palm Clarity © 2024 / 静けさの中で、自分のリズムを取り戻す鑑定
+  </div>
+</body>
+</html>

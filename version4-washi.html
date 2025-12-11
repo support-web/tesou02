@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>手相鑑定 和紙スタイル</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Yu Mincho', 'Hiragino Mincho ProN', serif;
+      background: #f6f2e8 url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 100 100"%3E%3Cg fill="%23eadcc4" fill-opacity="0.35"%3E%3Ccircle cx="10" cy="10" r="1"/%3E%3Ccircle cx="60" cy="50" r="1"/%3E%3Ccircle cx="90" cy="80" r="1"/%3E%3C/g%3E%3C/svg%3E');
+      color: #2c1c0f;
+    }
+    header {
+      text-align: center;
+      padding: 30px 18px 10px;
+    }
+    h1 { margin: 0; letter-spacing: 0.08em; font-size: clamp(26px, 4vw, 40px); }
+    .subtitle { color: #5b4332; margin: 8px 0 14px; }
+    .seal {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid #b86b54;
+      border-radius: 6px;
+      color: #b86b54;
+      letter-spacing: 0.12em;
+      background: rgba(184,107,84,0.08);
+    }
+    .hero {
+      max-width: 1000px;
+      margin: 24px auto;
+      padding: 12px;
+      border-radius: 18px;
+      background: #fffaf2;
+      border: 1px solid #e1d1b8;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.06);
+    }
+    .hero img { width: 100%; border-radius: 12px; object-fit: cover; }
+    .hero-text { padding: 12px 14px; }
+    .hero-text p { margin: 0 0 10px; }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 14px;
+      border: 1px solid #2c1c0f;
+      color: #2c1c0f;
+      text-decoration: none;
+      border-radius: 6px;
+      background: #f6f2e8;
+      font-weight: bold;
+    }
+    .section { max-width: 1000px; margin: 22px auto; padding: 0 14px; }
+    .section h2 { margin: 0 0 12px; letter-spacing: 0.04em; }
+    .columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+    .paper-card {
+      background: #fffaf2;
+      border: 1px solid #e1d1b8;
+      border-radius: 12px;
+      padding: 12px;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.8);
+    }
+    ul { margin: 6px 0 0; padding-left: 16px; }
+    .note {
+      background: #f0e5d4;
+      border-left: 3px solid #caa37a;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #463427;
+    }
+    .price { display: flex; flex-wrap: wrap; gap: 8px; }
+    .pill {
+      padding: 6px 10px;
+      border-radius: 6px;
+      border: 1px solid #caa37a;
+      background: #fff;
+    }
+    footer { text-align: center; color: #6a5443; padding: 24px 18px 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="seal">手相鑑定・和のしつらえ</div>
+    <h1>手のひらが語る物語を、和紙の温度で。</h1>
+    <p class="subtitle">古民家サロンをイメージした温かいトーン。静かな気配の中で、手相が導く道標をお伝えします。</p>
+  </header>
+
+  <div class="hero">
+    <div class="hero-text">
+      <p>人柄や気質を丁寧に言語化し、運気の巡りを季節の移ろいに重ねてお伝えします。恋愛・仕事・家族のことまで、心置きなくご相談ください。</p>
+      <div class="price">
+        <span class="pill">60分 8,800円</span>
+        <span class="pill">延長 15分 2,000円</span>
+        <span class="pill">対面/オンライン</span>
+      </div>
+      <a class="btn" href="#flow">予約の流れを見る</a>
+    </div>
+    <img src="assets/images/tesoutop.jpg" alt="手相鑑定の写真">
+  </div>
+
+  <section class="section">
+    <h2>鑑定の焦点</h2>
+    <div class="columns">
+      <div class="paper-card">
+        <h3>恋愛・ご縁</h3>
+        <p>縁の深まり方、タイミング、心のほどきを手の線から読みます。</p>
+      </div>
+      <div class="paper-card">
+        <h3>働き方</h3>
+        <p>才能の使いどころ、適職のヒント、次の一手をやわらかく設計。</p>
+      </div>
+      <div class="paper-card">
+        <h3>暮らしと家族</h3>
+        <p>住まい・家族関係・健康運など、日々に寄り添う開運メモをお渡しします。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="flow">
+    <h2>ご予約の流れ</h2>
+    <div class="paper-card">
+      <ol>
+        <li>ご希望の日時・相談内容をフォームへ記入</li>
+        <li>手の写真をメール/LINEで送付（撮影のコツを同封）</li>
+        <li>鑑定当日、オンラインまたはサロンでセッション</li>
+        <li>感性シート（PDF）と開運メモをお届け</li>
+      </ol>
+      <div class="note">感性シートの仕上がりイメージ</div>
+      <img src="assets/kansei.jpg" alt="完成イメージ" style="width:100%; border-radius:10px; margin-top:8px; border: 1px solid #e1d1b8;">
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>よくあるご相談</h2>
+    <div class="columns">
+      <div class="paper-card">
+        <ul>
+          <li>結婚のタイミングや相性</li>
+          <li>転職・独立・副業の見極め</li>
+          <li>引っ越しや時期の選び方</li>
+        </ul>
+      </div>
+      <div class="paper-card">
+        <ul>
+          <li>子育てや家族との向き合い方</li>
+          <li>心の疲れを癒すリズム作り</li>
+          <li>開運アクションを日常に落とし込む方法</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    和紙スタイルの手相鑑定 © 2024 — 日々の暮らしに寄り添うリーディング
+  </footer>
+</body>
+</html>

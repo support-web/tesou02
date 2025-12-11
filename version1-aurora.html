@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>手相鑑定オーロラスタイル</title>
+  <style>
+    :root {
+      --primary: #f28ba8;
+      --secondary: #7ac7ff;
+      --accent: #ffd166;
+      --bg: linear-gradient(135deg, #fef1ff, #e3f0ff);
+      --text: #2c2c38;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    header {
+      background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)),
+                  linear-gradient(120deg, rgba(242, 139, 168, 0.18), rgba(122, 199, 255, 0.18));
+      padding: 32px 24px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      right: -120px;
+      top: -120px;
+      width: 280px;
+      height: 280px;
+      background: radial-gradient(circle, rgba(255, 209, 102, 0.25), rgba(255, 209, 102, 0));
+      filter: blur(6px);
+    }
+    .hero {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .hero img {
+      width: 100%;
+      border-radius: 24px;
+      box-shadow: 0 18px 42px rgba(0,0,0,0.12);
+    }
+    h1 {
+      font-size: clamp(28px, 4vw, 42px);
+      margin: 0 0 16px;
+      color: #1f2230;
+    }
+    .subtitle {
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(242, 139, 168, 0.15);
+      color: #b83265;
+      font-weight: bold;
+      letter-spacing: 0.03em;
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 22px;
+      padding: 14px 20px;
+      background: linear-gradient(120deg, #f28ba8, #7ac7ff);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 14px;
+      box-shadow: 0 14px 34px rgba(122, 199, 255, 0.35);
+      font-weight: 700;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .cta:hover { transform: translateY(-2px); box-shadow: 0 18px 42px rgba(122,199,255,0.45); }
+    .grid-section {
+      max-width: 1080px;
+      margin: 42px auto;
+      padding: 0 20px;
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 18px;
+      padding: 18px 18px 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      border: 1px solid rgba(255,255,255,0.8);
+      backdrop-filter: blur(4px);
+    }
+    .card h3 { margin-top: 0; color: #1f2230; }
+    .pill {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(122,199,255,0.15);
+      color: #2f6fb7;
+      font-size: 13px;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+    .timeline { margin: 50px auto; max-width: 1000px; padding: 0 20px; }
+    .timeline h2 { text-align: center; margin-bottom: 18px; }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .step {
+      position: relative;
+      padding: 16px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.95);
+      border: 1px solid rgba(0,0,0,0.04);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+    }
+    .step-number {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(145deg, #ffd166, #f28ba8);
+      color: #fff;
+      font-weight: 700;
+      position: absolute;
+      top: -12px;
+      left: 16px;
+      box-shadow: 0 10px 18px rgba(242, 139, 168, 0.25);
+    }
+    footer {
+      text-align: center;
+      padding: 26px 18px 44px;
+      color: #61657a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <div>
+        <span class="badge">オーロラの導き</span>
+        <h1>手相から未来を描く、感性のセッション</h1>
+        <p class="subtitle">心と手のひらが共鳴する瞬間を丁寧にデザイン。<br>恋愛・仕事・人生設計まで、あなただけのストーリーを紐解きます。</p>
+        <div>
+          <span class="pill">オンライン鑑定</span>
+          <span class="pill">匿名OK</span>
+          <span class="pill">24時間予約</span>
+        </div>
+        <a class="cta" href="#flow">今すぐ予約する →</a>
+      </div>
+      <img src="assets/images/tesoutop.jpg" alt="手相鑑定イメージ">
+    </div>
+  </header>
+
+  <section class="grid-section">
+    <div class="card">
+      <h3>恋愛・パートナーシップ</h3>
+      <p>気になる人の気持ち、運命の時期、二人の相性を細やかにリーディング。手の線から読み解く感情の流れをお伝えします。</p>
+    </div>
+    <div class="card">
+      <h3>仕事・キャリア</h3>
+      <p>才能の活かし方、適職、チャンスの波を可視化。決断のタイミングやチームビルディングのヒントを具体的にご案内します。</p>
+    </div>
+    <div class="card">
+      <h3>ライフデザイン</h3>
+      <p>結婚・引っ越し・独立など、人生の節目に合わせた運気の流れを整理。無理なく進めるアクションプランを一緒に設計します。</p>
+    </div>
+  </section>
+
+  <section class="timeline" id="flow">
+    <h2>セッションの流れ</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h4>予約フォームを送信</h4>
+        <p>希望日時と相談内容を簡単に入力。返信は最短30分以内です。</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h4>手の写真をアップロード</h4>
+        <p>スマホで両手を撮影し、専用リンクへアップ。明るさ調整のコツもご案内。</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h4>オンライン鑑定</h4>
+        <p>Zoom/LINE通話に対応。リアルタイムで質問しながら、線の意味を丁寧に説明します。</p>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <h4>アフターメモをお届け</h4>
+        <p>鑑定内容・開運アクション・おすすめ時期をまとめたPDFをメールで送付。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="grid-section">
+    <div class="card">
+      <h3>完成イメージ</h3>
+      <p>セッション後にお渡しする感性シートの一例です。色彩やキーワードで未来のイメージを共有します。</p>
+      <img src="assets/kansei.jpg" alt="完成イメージ" style="width:100%; border-radius:12px; margin-top:10px; box-shadow:0 8px 22px rgba(0,0,0,0.12);">
+    </div>
+    <div class="card">
+      <h3>こんな方におすすめ</h3>
+      <ul>
+        <li>恋も仕事も一歩踏み出したい</li>
+        <li>自分の強みを客観的に知りたい</li>
+        <li>タイミングを逃したくない</li>
+        <li>開運アクションを具体的に欲しい</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>セッション詳細</h3>
+      <p>60分 9,800円（税込）<br>延長 15分 2,500円</p>
+      <p>オンライン／対面（渋谷）対応。リピート割・ペア割あります。</p>
+    </div>
+  </section>
+
+  <footer>
+    手相鑑定 Aurora Style © 2024 – 心の音色に寄り添うリーディング
+  </footer>
+</body>
+</html>
